@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Map-style background of Nashville, Brentwood, Franklin, and Murfreesboro">
+  <defs>
+    <filter id="labelShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#ffffff" flood-opacity=".95"/>
+    </filter>
+    <g id="interstate">
+      <path d="M0,-18 L18,-8 L14,16 L0,25 L-14,16 L-18,-8 Z" fill="#2f7ed8" stroke="#ffffff" stroke-width="4"/>
+      <path d="M0,-18 L18,-8 L14,16 L0,25 L-14,16 L-18,-8 Z" fill="none" stroke="#d9413c" stroke-width="3" opacity=".85"/>
+    </g>
+    <g id="route">
+      <rect x="-23" y="-17" width="46" height="34" rx="13" fill="#ffffff" stroke="#4d555e" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="#ccefd9"/>
+
+  <g opacity=".75">
+    <path d="M-30 150 C170 110 265 170 420 118 C580 64 720 110 870 76 C1040 38 1180 40 1640 76 L1640 0 L-30 0 Z" fill="#e8f7ed"/>
+    <path d="M-30 715 C115 635 300 650 470 700 C640 750 770 708 940 650 C1140 580 1350 610 1640 548 L1640 930 L-30 930 Z" fill="#bce8cc"/>
+    <path d="M925 110 C980 126 1015 166 1008 220 C998 290 918 300 880 250 C835 190 858 128 925 110 Z" fill="#aee9ef"/>
+    <path d="M1190 170 C1275 130 1350 180 1320 260 C1290 340 1195 315 1160 245 C1145 215 1155 184 1190 170 Z" fill="#aee9ef"/>
+    <path d="M1398 390 C1455 375 1506 420 1485 485 C1462 552 1376 530 1362 466 C1353 425 1368 400 1398 390 Z" fill="#aee9ef"/>
+  </g>
+
+  <g fill="#f9faf7" opacity=".88">
+    <path d="M470 70 C595 38 755 70 832 140 C920 220 890 340 785 385 C620 455 420 400 350 290 C280 182 340 105 470 70 Z"/>
+    <path d="M390 345 C510 300 650 355 678 465 C708 582 590 650 450 612 C322 577 262 462 320 390 C338 368 362 355 390 345 Z"/>
+    <path d="M760 395 C900 330 1050 365 1110 470 C1174 582 1080 710 916 700 C765 690 676 560 710 466 C720 436 738 412 760 395 Z"/>
+    <path d="M1185 465 C1355 400 1510 480 1512 620 C1515 760 1330 835 1185 760 C1040 685 1030 538 1185 465 Z"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M520 -40 C535 115 540 260 530 420 C520 585 500 735 485 940" stroke="#ffffff" stroke-width="22"/>
+    <path d="M520 -40 C535 115 540 260 530 420 C520 585 500 735 485 940" stroke="#7f99c6" stroke-width="10"/>
+    <path d="M585 10 C690 175 825 320 1000 470 C1165 610 1300 735 1425 925" stroke="#ffffff" stroke-width="20"/>
+    <path d="M585 10 C690 175 825 320 1000 470 C1165 610 1300 735 1425 925" stroke="#7f99c6" stroke-width="9"/>
+    <path d="M-40 735 C180 735 360 705 540 676 C770 640 1025 635 1265 670 C1410 690 1520 720 1640 770" stroke="#ffffff" stroke-width="18"/>
+    <path d="M-40 735 C180 735 360 705 540 676 C770 640 1025 635 1265 670 C1410 690 1520 720 1640 770" stroke="#7f99c6" stroke-width="8"/>
+    <path d="M0 178 C210 190 385 225 560 265 C745 306 970 334 1185 338 C1350 342 1495 320 1640 280" stroke="#ffffff" stroke-width="14"/>
+    <path d="M0 178 C210 190 385 225 560 265 C745 306 970 334 1185 338 C1350 342 1495 320 1640 280" stroke="#91a7c7" stroke-width="6"/>
+    <path d="M350 180 C425 290 490 400 575 535 C665 680 730 780 810 940" stroke="#ffffff" stroke-width="12"/>
+    <path d="M350 180 C425 290 490 400 575 535 C665 680 730 780 810 940" stroke="#91a7c7" stroke-width="5"/>
+    <path d="M700 120 C765 235 845 335 920 445 C980 530 1050 615 1135 720" stroke="#ffffff" stroke-width="12"/>
+    <path d="M700 120 C765 235 845 335 920 445 C980 530 1050 615 1135 720" stroke="#91a7c7" stroke-width="5"/>
+    <path d="M225 560 C350 510 465 485 610 475 C735 466 835 480 930 510" stroke="#ffffff" stroke-width="11"/>
+    <path d="M225 560 C350 510 465 485 610 475 C735 466 835 480 930 510" stroke="#91a7c7" stroke-width="5"/>
+    <path d="M985 205 C1090 320 1170 420 1230 560 C1282 682 1345 792 1448 920" stroke="#ffffff" stroke-width="11"/>
+    <path d="M985 205 C1090 320 1170 420 1230 560 C1282 682 1345 792 1448 920" stroke="#91a7c7" stroke-width="5"/>
+    <path d="M155 305 C280 350 418 395 570 440 C755 495 920 540 1110 570 C1282 598 1430 610 1640 605" stroke="#ffffff" stroke-width="10"/>
+    <path d="M155 305 C280 350 418 395 570 440 C755 495 920 540 1110 570 C1282 598 1430 610 1640 605" stroke="#91a7c7" stroke-width="4"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" filter="url(#labelShadow)">
+    <text x="520" y="88" fill="#25292d" font-size="52" font-weight="900">Nashville</text>
+    <text x="470" y="318" fill="#25292d" font-size="40" font-weight="800">Brentwood</text>
+    <text x="395" y="492" fill="#25292d" font-size="42" font-weight="800">Franklin</text>
+    <text x="1210" y="710" fill="#25292d" font-size="34" font-weight="700">Murfreesboro</text>
+    <text x="760" y="505" fill="#25292d" font-size="31" font-weight="600">Nolensville</text>
+    <text x="1080" y="460" fill="#25292d" font-size="31" font-weight="600">Smyrna</text>
+    <text x="915" y="360" fill="#25292d" font-size="31" font-weight="600">La Vergne</text>
+    <text x="275" y="180" fill="#25292d" font-size="29" font-weight="600">Belle Meade</text>
+    <text x="1235" y="286" fill="#25292d" font-size="29" font-weight="600">Ashwood</text>
+    <text x="280" y="715" fill="#25292d" font-size="29" font-weight="600">Spring Hill</text>
+    <text x="730" y="685" fill="#25292d" font-size="29" font-weight="600">Arrington</text>
+    <text x="1030" y="805" fill="#25292d" font-size="29" font-weight="600">Rockvale</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" font-size="25" text-anchor="middle">
+    <use href="#interstate" x="795" y="105"/><text x="795" y="113" fill="#ffffff">40</text>
+    <use href="#interstate" x="554" y="505"/><text x="554" y="513" fill="#ffffff">65</text>
+    <use href="#interstate" x="1125" y="520"/><text x="1125" y="528" fill="#ffffff">24</text>
+    <use href="#interstate" x="1090" y="690"/><text x="1090" y="698" fill="#ffffff" font-size="20">840</text>
+    <use href="#interstate" x="420" y="780"/><text x="420" y="788" fill="#ffffff" font-size="20">840</text>
+    <use href="#route" x="470" y="395"/><text x="470" y="404" fill="#3b3f45" font-size="23">431</text>
+    <use href="#route" x="735" y="306"/><text x="735" y="315" fill="#3b3f45" font-size="22">254</text>
+    <use href="#route" x="830" y="560"/><text x="830" y="569" fill="#3b3f45" font-size="22">41A</text>
+    <use href="#route" x="930" y="255"/><text x="930" y="264" fill="#3b3f45" font-size="22">41</text>
+    <use href="#route" x="1215" y="420"/><text x="1215" y="429" fill="#3b3f45" font-size="22">266</text>
+    <use href="#route" x="298" y="500"/><text x="298" y="509" fill="#3b3f45" font-size="22">96</text>
+    <use href="#route" x="1435" y="560"/><text x="1435" y="569" fill="#3b3f45" font-size="22">231</text>
+  </g>
+</svg>

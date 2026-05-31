@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="270 200 996 670" role="img" aria-labelledby="title desc">
+  <title id="title">The Catcher's Collective wordmark</title>
+  <desc id="desc">Gold serif Catcher's Collective wordmark with a home plate icon on a black background.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7e8bd"/>
+      <stop offset="0.28" stop-color="#bd9650"/>
+      <stop offset="0.5" stop-color="#fff0c5"/>
+      <stop offset="0.72" stop-color="#b88b45"/>
+      <stop offset="1" stop-color="#f6dfaa"/>
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="blur"/>
+      <feOffset dy="1" result="offset"/>
+      <feMerge>
+        <feMergeNode in="offset"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="url(#gold)" filter="url(#softGlow)" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <text x="768" y="294" font-size="88" font-weight="700" letter-spacing="22">THE</text>
+    <text x="768" y="450" font-size="142" font-weight="700" letter-spacing="18">CATCHER'S</text>
+    <text x="768" y="565" font-size="78" font-weight="700" letter-spacing="24">COLLECTIVE</text>
+  </g>
+  <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="square" opacity="0.95">
+    <path d="M324 539h118"/>
+    <path d="M1094 539h118"/>
+  </g>
+  <path d="M656 630h224v100l-112 104-112-104z" fill="#020202" stroke="url(#gold)" stroke-width="6" stroke-linejoin="miter"/>
+</svg>
