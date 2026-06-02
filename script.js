@@ -20,201 +20,99 @@ document.querySelectorAll(".lead-form").forEach((form) => {
 
 const packageSets = {
   private: {
-    kicker: "Private 1-on-1 lessons · 60 min sessions",
-    gridClass: "private-package-grid",
-    noteLabel: "Pro tip:",
+    kicker: "Private lesson options · details coming soon",
+    gridClass: "two-card-grid",
+    noteLabel: "Planning note:",
     note:
-      "Push families toward the 10-pack or monthly retainer from the start. Consistent, long-term training is what actually moves the needle — and it keeps your schedule filled and revenue predictable.",
+      "These cards are placeholders while the final offer details, prices, and calls to action are shaped.",
     cards: [
       {
-        title: "Drop-in",
-        price: "$90",
-        unit: "/ session",
-        detail: "No commitment, pay as you go",
-        items: ["60-min 1-on-1 session", "Any pillar focus", "Session recap notes"],
+        title: "1:1 Training with Josh",
+        titleTab: true,
+        options: [
+          {
+            price: "$99",
+            unit: "/ session",
+            detail: "Drop in, pay as you go",
+          },
+          {
+            price: "$375",
+            unit: "/ 4-pack",
+            detail: "Four 60-minute sessions",
+          },
+        ],
+        items: [
+          "Any pillar training available for 60 minutes",
+          "Video recap from OnForm after the completed session",
+          "Best for focused 1:1 instruction, skill correction, and development planning",
+        ],
       },
       {
-        badge: "Most popular",
-        title: "5-Session Pack",
-        price: "$425",
-        unit: "/ pack",
-        detail: "$85/session · save $25",
+        title: "Group Training Session",
+        titleTab: true,
+        options: [
+          {
+            price: "$220",
+            unit: "/ session",
+            detail: "Single session · no commitment",
+          },
+          {
+            price: "$205",
+            unit: "/ session",
+            detail: "4-session pack",
+          },
+        ],
         emphasized: true,
         items: [
-          "5 x 60-min sessions",
-          "Personalized development plan",
-          "Progress tracking",
-          "1 video review included",
-        ],
-      },
-      {
-        badge: "Best value",
-        badgeClass: "value",
-        title: "10-Session Pack",
-        price: "$800",
-        unit: "/ pack",
-        detail: "$80/session · save $100",
-        items: [
-          "10 x 60-min sessions",
-          "Full pillar assessment",
-          "3 video reviews included",
-          "Priority scheduling",
-          "Parent progress report",
-        ],
-      },
-      {
-        title: "Monthly Retainer",
-        price: "$340",
-        unit: "/ mo",
-        detail: "4 sessions/mo · $85/session",
-        items: [
-          "4 x 60-min sessions",
-          "Ongoing development plan",
-          "2 video reviews/mo",
-          "Text access between sessions",
+          "90-minute group training sessions",
+          "Up to 4 catchers per session",
+          "Single session is $55 per catcher",
+          "4-session pack is $205 total per 90-minute session",
         ],
       },
     ],
   },
-  groups: {
-    kicker: "Small group sessions · 2-4 catchers · 75 min · pricing per player",
-    gridClass: "",
-    noteLabel: "Revenue math:",
+  academy: {
+    kicker: "Online academy options · details coming soon",
+    gridClass: "two-card-grid",
+    noteLabel: "Planning note:",
     note:
-      "A group of 4 catchers on a 10-pack generates $1,800 for 10 sessions — the same time investment as a 10-pack private for $800. Groups are your most efficient use of time once demand builds.",
+      "These cards are placeholders while the final course ladder, launch sequence, and purchase paths are shaped.",
     cards: [
       {
-        title: "Drop-in",
-        price: "$55",
-        unit: "/ player",
-        detail: "Per session, no commitment",
-        items: ["75-min group session", "Max 4 catchers", "Focused drill work"],
+        badge: "Option 1",
+        title: "Online Academy Card",
+        price: "TBD",
+        unit: "",
+        detail: "Details coming soon",
+        items: ["Program details to be added", "Course structure to be added", "Best-fit athlete notes to be added"],
       },
       {
-        badge: "Most popular",
-        title: "5-Session Pack",
-        price: "$250",
-        unit: "/ player",
-        detail: "$50/session · save $25/player",
+        badge: "Option 2",
+        title: "Online Academy Card",
+        price: "TBD",
+        unit: "",
+        detail: "Details coming soon",
         emphasized: true,
-        items: ["5 x 75-min sessions", "Group development plan", "Individual feedback each session"],
-      },
-      {
-        badge: "Best value",
-        badgeClass: "value",
-        title: "10-Session Pack",
-        price: "$450",
-        unit: "/ player",
-        detail: "$45/session · save $100/player",
-        items: [
-          "10 x 75-min sessions",
-          "Individual assessments",
-          "1 video review per player",
-          "Priority group booking",
-        ],
+        items: ["Program details to be added", "Course structure to be added", "Best-fit athlete notes to be added"],
       },
     ],
   },
   clinics: {
-    kicker: "Clinics & camps · event-based pricing per player",
-    gridClass: "",
-    noteLabel: "Revenue math:",
+    kicker: "Clinics and camps · seasonal registration updates",
+    gridClass: "single-card-grid",
+    noteLabel: "Seasonal note:",
     note:
-      "A sold-out weekend camp at 20 players = $5,980. Run 4-6 per year and clinics alone become a major revenue stream — plus they're your best funnel for private lesson clients.",
+      "Camp and clinic details will be added here as soon as registration windows are ready to open.",
     cards: [
       {
-        title: "Half-Day Clinic",
-        price: "$85",
-        unit: "/ player",
-        detail: "3 hrs · up to 12 catchers",
-        items: [
-          "Focused on 1-2 pillars",
-          "Station-based format",
-          "Great for team groups",
-          "Certificate of completion",
-        ],
-      },
-      {
-        badge: "Recommended start",
-        title: "Full-Day Camp",
-        price: "$165",
-        unit: "/ player",
-        detail: "6 hrs · up to 16 catchers",
-        emphasized: true,
-        items: [
-          "All 6 pillars covered",
-          "Morning & afternoon sessions",
-          "Individual assessments",
-          "Video breakdown included",
-          "Catchers Collective gear",
-        ],
-      },
-      {
-        badge: "Highest revenue event",
-        badgeClass: "value",
-        title: "Weekend Camp",
-        price: "$299",
-        unit: "/ player",
-        detail: "2 days · up to 20 catchers",
-        items: [
-          "Deep dive all 6 pillars",
-          "Live game situation work",
-          "Full video analysis report",
-          "Gear + digital workbook",
-          "Post-camp follow-up call",
-        ],
-      },
-    ],
-  },
-  online: {
-    kicker: "Online & virtual coaching · remote players or between-session support",
-    gridClass: "private-package-grid",
-    noteLabel: "Scalability play:",
-    note:
-      "Online coaching is the one service that isn't limited by your location or hours. Even 10 players on the Pro Plan creates $1,990/mo in recurring revenue while in-person training keeps growing.",
-    cards: [
-      {
-        title: "Video Analysis",
-        price: "$50",
-        unit: "/ review",
-        detail: "Async · 48hr turnaround",
-        items: ["Submit 1 video clip", "Written + annotated feedback", "3 key takeaways"],
-      },
-      {
-        title: "Starter Plan",
-        price: "$99",
-        unit: "/ mo",
-        detail: "For players outside the Nashville area",
-        items: ["2 video reviews/mo", "Written feedback reports", "Monthly check-in call (30 min)"],
-      },
-      {
-        badge: "Most popular",
-        title: "Pro Plan",
-        price: "$199",
-        unit: "/ mo",
-        detail: "Best for committed remote athletes",
-        emphasized: true,
-        items: [
-          "4 video reviews/mo",
-          "2 live virtual sessions/mo",
-          "Custom drill programming",
-          "Text access to Josh",
-        ],
-      },
-      {
-        badge: "Elite",
-        badgeClass: "value",
-        title: "Elite Plan",
-        price: "$299",
-        unit: "/ mo",
-        detail: "For serious college-bound catchers",
-        items: [
-          "Unlimited video reviews",
-          "4 live virtual sessions/mo",
-          "Recruiting guidance",
-          "Priority response (24hrs)",
-          "Game film breakdown",
-        ],
+        badge: "Seasonal",
+        title: "Clinics and Camps",
+        detail: "Announced by Coach Josh",
+        cardClass: "announcement-card baseball-card",
+        items: [],
+        body:
+          "Clinics and camps are seasonal and announced by Coach Josh. More information on camps will be provided here when camp and clinic registration is open.",
       },
     ],
   },
@@ -250,13 +148,32 @@ function renderPackageCards(type) {
         ? `<span class="package-badge ${card.badgeClass || ""}">${card.badge}</span>`
         : "";
       const items = card.items.map((item) => `<li>${item}</li>`).join("");
+      const pricing = card.options
+        ? `<div class="package-options" aria-label="${card.title} pricing options">
+            ${card.options
+              .map(
+                (option) => `
+                  <div>
+                    <strong>${option.price} <small>${option.unit}</small></strong>
+                    <p>${option.detail}</p>
+                  </div>
+                `
+              )
+              .join("")}
+          </div>`
+        : card.price
+        ? `<strong>${card.price} <small>${card.unit}</small></strong>
+          <p>${card.detail}</p>`
+        : `<p>${card.detail}</p>`;
+      const cardBody = card.body ? `<p class="package-card-body">${card.body}</p>` : "";
+      const checklist = items ? `<ul>${items}</ul>` : "";
       return `
-        <article class="package-card ${card.emphasized ? "emphasized" : ""}">
+        <article class="package-card ${card.emphasized ? "emphasized" : ""} ${card.cardClass || ""}">
           ${badge}
-          <h3>${card.title}</h3>
-          <strong>${card.price} <small>${card.unit}</small></strong>
-          <p>${card.detail}</p>
-          <ul>${items}</ul>
+          <h3 class="${card.titleTab ? "package-title-tab" : ""}">${card.title}</h3>
+          ${pricing}
+          ${cardBody}
+          ${checklist}
         </article>
       `;
     })
@@ -285,6 +202,7 @@ packageTabButtons.forEach((tab) => {
 });
 
 setActivePackageTab(lockedPackageTab);
+renderPackageCards(lockedPackageTab);
 
 document.querySelectorAll("[data-package-link]").forEach((link) => {
   link.addEventListener("click", () => {
