@@ -20,11 +20,8 @@ document.querySelectorAll(".lead-form").forEach((form) => {
 
 const packageSets = {
   private: {
-    kicker: "Private lesson options · details coming soon",
+    kicker: "Private lesson options",
     gridClass: "two-card-grid",
-    noteLabel: "Planning note:",
-    note:
-      "These cards are placeholders while the final offer details, prices, and calls to action are shaped.",
     cards: [
       {
         title: "1:1 Training with Josh",
@@ -48,53 +45,81 @@ const packageSets = {
         ],
       },
       {
-        title: "Group Training Session",
+        title: "One-Month Group Catching Program",
         titleTab: true,
         options: [
           {
-            price: "$220",
-            unit: "/ session",
-            detail: "Single session · no commitment",
-          },
-          {
-            price: "$205",
-            unit: "/ session",
-            detail: "4-session pack",
+            price: "$350",
+            unit: "/ 4-session pack",
+            detail: "Four 90-minute sessions",
           },
         ],
         emphasized: true,
         items: [
-          "90-minute group training sessions",
-          "Up to 4 catchers per session",
-          "Single session is $55 per catcher",
-          "4-session pack is $205 total per 90-minute session",
+          "Maximum of four catchers per group",
+          "All four sessions must be used within a 30-day window",
+          "Video recap from OnForm after the completed session",
+          "Best for consistent skill work and month-long development",
         ],
       },
     ],
   },
   academy: {
-    kicker: "Online academy options · details coming soon",
-    gridClass: "two-card-grid",
-    noteLabel: "Planning note:",
+    kicker: "Catcher's Collective Online Academy · launch details coming soon",
+    gridClass: "",
+    noteLabel: "Launch note:",
     note:
-      "These cards are placeholders while the final course ladder, launch sequence, and purchase paths are shaped.",
+      "Final course access, pricing, and registration links will be added when the academy launch path is ready.",
     cards: [
       {
-        badge: "Option 1",
-        title: "Online Academy Card",
-        price: "TBD",
+        badge: "Online Academy",
+        title: "8-12 Foundations",
+        price: "Coming Soon",
         unit: "",
-        detail: "Details coming soon",
-        items: ["Program details to be added", "Course structure to be added", "Best-fit athlete notes to be added"],
+        detail: "The Foundation Code",
+        items: [
+          "Athletic development, nutrition, and habits for young catchers",
+          "Receiving, blocking, transfers and footwork, throwing, and Game IQ foundations",
+          "Built for simple, confident skill development before the game speeds up",
+        ],
       },
       {
-        badge: "Option 2",
-        title: "Online Academy Card",
-        price: "TBD",
+        badge: "Online Academy",
+        title: "13-15 Development",
+        price: "Coming Soon",
         unit: "",
-        detail: "Details coming soon",
+        detail: "The Field General Blueprint",
         emphasized: true,
-        items: ["Program details to be added", "Course structure to be added", "Best-fit athlete notes to be added"],
+        items: [
+          "Athletic development, nutrition, and recovery for the high school transition",
+          "Receiving, blocking, transfers and footwork, and throwing under pressure",
+          "Game management, IQ, leadership, film, and self-evaluation habits",
+        ],
+      },
+      {
+        badge: "Online Academy",
+        title: "16-18 High School Prep",
+        price: "Coming Soon",
+        unit: "",
+        detail: "The Prospect Signal",
+        items: [
+          "Athletic development, nutrition/recovery, and recruiting/career development",
+          "Receiving, blocking, transfers and footwork, throwing, and game management/IQ",
+          "Pitch calling, game prep, pitcher leadership, mental game, and film/self-evaluation",
+        ],
+      },
+      {
+        badge: "Online Academy",
+        title: "19-22 College",
+        price: "Coming Soon",
+        unit: "",
+        detail: "Behind the Plate Masterclass",
+        items: [
+          "Identity, life skills, athletic development, nutrition/recovery, and pro preparation",
+          "Receiving, blocking, transfers and footwork, throwing, and game management/IQ",
+          "Game preparation, advanced pitcher management, leadership, mental game, and film/self-evaluation",
+          "Career navigation and the reality of pro ball",
+        ],
       },
     ],
   },
@@ -110,6 +135,7 @@ const packageSets = {
         title: "Clinics and Camps",
         detail: "Announced by Coach Josh",
         cardClass: "announcement-card baseball-card",
+        contentClass: "baseball-card-content",
         items: [],
         body:
           "Clinics and camps are seasonal and announced by Coach Josh. More information on camps will be provided here when camp and clinic registration is open.",
@@ -138,7 +164,7 @@ function renderPackageCards(type) {
   const grid = document.querySelector("[data-package-grid]");
   const note = document.querySelector("[data-package-note]");
 
-  if (!kicker || !grid || !note) return;
+  if (!kicker || !grid) return;
 
   kicker.textContent = packageSet.kicker;
   grid.className = `package-grid ${packageSet.gridClass}`.trim();
@@ -149,7 +175,7 @@ function renderPackageCards(type) {
         : "";
       const items = card.items.map((item) => `<li>${item}</li>`).join("");
       const pricing = card.options
-        ? `<div class="package-options" aria-label="${card.title} pricing options">
+        ? `<div class="package-options ${card.options.length === 1 ? "single-option" : ""}" aria-label="${card.title} pricing options">
             ${card.options
               .map(
                 (option) => `
@@ -167,18 +193,23 @@ function renderPackageCards(type) {
         : `<p>${card.detail}</p>`;
       const cardBody = card.body ? `<p class="package-card-body">${card.body}</p>` : "";
       const checklist = items ? `<ul>${items}</ul>` : "";
+      const cardContent = `
+        ${badge}
+        <h3 class="${card.titleTab ? "package-title-tab" : ""}">${card.title}</h3>
+        ${pricing}
+        ${cardBody}
+        ${checklist}
+      `;
       return `
         <article class="package-card ${card.emphasized ? "emphasized" : ""} ${card.cardClass || ""}">
-          ${badge}
-          <h3 class="${card.titleTab ? "package-title-tab" : ""}">${card.title}</h3>
-          ${pricing}
-          ${cardBody}
-          ${checklist}
+          ${card.contentClass ? `<div class="${card.contentClass}">${cardContent}</div>` : cardContent}
         </article>
       `;
     })
     .join("");
-  note.innerHTML = `<strong>${packageSet.noteLabel}</strong> <span>${packageSet.note}</span>`;
+  if (note) {
+    note.innerHTML = `<strong>${packageSet.noteLabel}</strong> <span>${packageSet.note}</span>`;
+  }
 }
 
 const packageTabButtons = document.querySelectorAll("[data-package-tab]");
@@ -213,6 +244,32 @@ document.querySelectorAll("[data-package-link]").forEach((link) => {
 
 document.querySelectorAll("[data-autoplay-video]").forEach((video) => {
   video.muted = true;
+
+  const playlist = video.dataset.videoPlaylist
+    ? video.dataset.videoPlaylist.split("|").filter(Boolean)
+    : [];
+
+  if (playlist.length > 1) {
+    let activeClip = 0;
+
+    const updateActiveClip = () => {
+      video.src = playlist[activeClip];
+      video.setAttribute("controls", "");
+    };
+
+    const playNextClip = () => {
+      activeClip = (activeClip + 1) % playlist.length;
+      updateActiveClip();
+      video.play().catch(() => {});
+    };
+
+    updateActiveClip();
+
+    video.addEventListener("ended", () => {
+      playNextClip();
+    });
+  }
+
   video.play().catch(() => {
     video.addEventListener("canplay", () => video.play().catch(() => {}), { once: true });
   });
