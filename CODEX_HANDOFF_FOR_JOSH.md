@@ -2,6 +2,12 @@
 
 Project: The Catcher's Collective website
 
+For moving this project to a new MacBook, start with:
+
+```text
+NEW_MAC_TRANSFER_GUIDE.md
+```
+
 ## Repository and Live Site
 
 - GitHub repo: `git@github.com:CathersCollective/CatchersCollective.git`
@@ -102,10 +108,13 @@ Currently uses placeholder cards. It should eventually reflect the course/curric
 
 Potential course skeleton from the curriculum PDF:
 
-- 8-12 Foundations: The Foundation Code
-- 13-15 Development: The Field General Blueprint
-- 16-18 High School Prep: The Prospect Signal
-- 19-22 College: Behind the Plate Masterclass
+- 8U: The Catcher's Code: Foundations
+- 9-10: The Catcher's Code: Youth
+- 11-12: The Catcher's Code: Development I
+- 13-14: The Catcher's Code: Development II
+- 15-16: The Catcher's Code: Competitive
+- 17-18: Elite Signal
+- College: Behind the Plate Masterclass
 
 Do not overbuild this section until Josh confirms how he wants the public marketing cards to read.
 
